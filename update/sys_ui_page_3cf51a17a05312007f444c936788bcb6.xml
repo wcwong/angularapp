@@ -7,14 +7,20 @@
         <direct>false</direct>
         <endpoint>x_snc_angular_app_angular_app.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
-<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-	 
-	<div ng-app="">
-		<input type="text" ng-model="myVar" placeholder="Enter some text here" />
-		{{myVar}}
-	</div>
-</j:jelly>]]></html>
+    <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <div ng-app="">
+            <input type="text" ng-model="myVar" placeholder="Enter some text here" />
+            <p/><p/>
+            <div class="jumbotron">
+                <h1 class="display-3">Hello, world!</h1>
+                <hr class="m-y-2" />
+				<p>{{myVar}}</p>
+			</div>
+		</div>
+    </j:jelly>]]></html>
         <name>angular_app</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
@@ -22,7 +28,7 @@
         <sys_created_on>2016-05-15 16:20:27</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>3cf51a17a05312007f444c936788bcb6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>angular_app</sys_name>
         <sys_package display_value="Angular App" source="x_snc_angular_app">ba95d217a05312007f444c936788bcd4</sys_package>
         <sys_policy/>
@@ -30,6 +36,6 @@
         <sys_scope display_value="Angular App">ba95d217a05312007f444c936788bcd4</sys_scope>
         <sys_update_name>sys_ui_page_3cf51a17a05312007f444c936788bcb6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-05-15 16:23:17</sys_updated_on>
+        <sys_updated_on>2016-05-15 16:31:08</sys_updated_on>
     </sys_ui_page>
 </record_update>
